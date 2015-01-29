@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  performance_name: MyString
+  performance_artist: MyString
+  performance_venue: MyString
+  performance_date: 2015-01-29 09:56:27
+
+two:
+  performance_name: MyString
+  performance_artist: MyString
+  performance_venue: MyString
+  performance_date: 2015-01-29 09:56:27

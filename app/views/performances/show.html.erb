@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Performance name:</strong>
+  <%= @performance.performance_name %>
+</p>
+
+<p>
+  <strong>Performance artist:</strong>
+  <%= @performance.performance_artist %>
+</p>
+
+<p>
+  <strong>Performance venue:</strong>
+  <%= @performance.performance_venue %>
+</p>
+
+<p>
+  <strong>Performance date:</strong>
+  <%= @performance.performance_date %>
+</p>
+
+<%= link_to 'Edit', edit_performance_path(@performance) %> |
+<%= link_to 'Back', performances_path %>
