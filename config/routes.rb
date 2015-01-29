@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :artists
 
   get 'registration/index' => 'registration#index'
+  get 'registration/confirmation' => 'registration#confirmation'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
