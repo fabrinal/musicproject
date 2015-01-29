@@ -1,3 +1,36 @@
-<h1>Hello registration</h1>
+<%= form_tag do %>
 
-<h2>Ok let create form</h2>
+<div>
+<%=label_tag 'Status', "Who Are You?"%><br />
+<% the_array = ['A Fan', 'An Artist', 'A Venue'] %>
+<%= select_tag 'Status', options_for_select(the_array.collect {|v,i| [v,the_array.index(v)] } )%>
+</div>
+
+<div>
+<%= label_tag 'Name', "What's your name?" %><br />
+<%= text_field_tag 'Name' %>
+</div>
+
+
+<div>
+<%= label_tag 'E-mail address', "Your E-mail address?" %><br />
+<%= text_field_tag 'E-mail address' %>
+<div/>
+
+<div>
+<%= label_tag 'Password', "Your Password?"%><br />
+<%= text_field_tag 'Password' %>
+<div/>
+
+
+<div>
+<%= label_tag 'Confirm_Password', "Re-type Your New Password"%><br />
+<%= text_field_tag 'Confirm_Password'%>
+</div>
+
+
+<div>
+<%= submit_tag %>
+</div>
+
+<% end %>
