@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Venue name:</strong>
+  <%= @venue.venue_name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @venue.location %>
+</p>
+
+<p>
+  <strong>Contact info:</strong>
+  <%= @venue.contact_info %>
+</p>
+
+<p>
+  <strong>Parking:</strong>
+  <%= @venue.parking %>
+</p>
+
+<p>
+  <strong>Venue capacity:</strong>
+  <%= @venue.venue_capacity %>
+</p>
+
+<p>
+  <strong>Venue image:</strong>
+  <%= @venue.venue_image %>
+</p>
+
+<%= link_to 'Edit', edit_venue_path(@venue) %> |
+<%= link_to 'Back', venues_path %>
