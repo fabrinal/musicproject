@@ -28,7 +28,7 @@ class VenuesController < ApplicationController
 
     respond_to do |format|
       if @venue.save
-        format.html { redirect_to @venue, notice: 'Venue was successfully created.' }
+        format.html { render 'registration/confirmation' }
         format.json { render :show, status: :created, location: @venue }
       else
         format.html { render :new }
