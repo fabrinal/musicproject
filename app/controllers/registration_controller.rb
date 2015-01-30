@@ -15,8 +15,14 @@ class RegistrationController < ApplicationController
   end
 
   def create
-    name = params[:name]
-    Registration.create(item_name:name)
+    @status = params[:status]
+   if params[:status] == "0"
+      redirect_to '/fans/new'
+    elsif params[:status] == "1"
+      redirect_to '/artists/new'
+    else
+      redirect_to '/venues/new'
+    end
   end
 
   def update

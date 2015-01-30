@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
   resources :venues
-
   resources :fans
-
   resources :songs
   resources :performances
   resources :artists
 
   get 'registration/index' => 'registration#index'
   get 'registration/confirmation' => 'registration#confirmation'
+  post 'registration/create' => 'registration#create'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
